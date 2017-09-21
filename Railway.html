@@ -1,0 +1,122 @@
+<html>
+<head><title>Railway Concession
+</title>
+<link rel="stylesheet" type="text/css" href="home.css" />
+<script type="text/javascript">
+function validate()
+ {
+
+     if(document.f1.fname.value=="")
+     {
+         alert("please enter the first name");
+         return false;
+     }
+     if(document.f1.rd[0].checked=="" && document.f1.rd[1].checked=="")
+     {
+         alert("please select your gender");
+         return false;
+     }
+     if(document.f1.addr.value=="")
+     {
+         alert("please enter the address");
+         return false;
+     }
+     if(document.f1.clas.value=="")
+     {
+         alert("please enter the class");
+         return false;
+     }
+     if(document.f1.dept.value=="")
+     {
+         alert("please enter the department");
+         return false;
+     }
+     if(document.f1.rono.value=="")
+     {
+         alert("please enter the Roll No");
+         return false;
+     }
+     if(document.f1.dte.value=="")
+     {
+         alert("please enter the date");
+         return false;
+     }
+     if(document.f1.dtbr.value=="")
+     {
+         alert("please enter the date of birth");
+         return false;
+     }
+     if(document.f1.ag.value=="")
+     {
+         alert("please enter the age");
+         return false;
+     }
+        if(document.f1.durt.value=="")
+     {
+         alert("please enter the duration ");
+         return false;
+     }
+        if(document.f1.from1.value=="")
+     {
+         alert("please enter your location");
+         return false;
+     }
+     return true;
+ }
+ </script>
+</head>
+
+
+<body>
+<form name="f1" method="post" action="railw.php">
+<pre>
+                   <h1><center>Application of Railway concession Form</center></h1>
+
+    Date :- <input type="date" name="dte">
+
+
+    Name :- <input type="text" name="fname" value="" placeholder=" full name"/>
+
+    gender :- <select name="rd" placeholder="enter your gender"/>
+                  <option>Male</option>
+                  <option>Female</option>
+                  </select>
+
+    Address :-
+               <textarea name="addr" rows="4" cells"10" placeholder="enter your address"></textarea>
+
+
+ Class :-<input type="text" name="clas" value="" placeholder="enter your class"/>  Dept :-<input type="text" name="dept" value="" placeholder="enter your department"/>  Roll.No :-<input type="text" name="rono" value="" placeholder="enter your roll.no"/>
+
+
+             Date Of Birth :-  <input type="date" name="dtbr"/>
+
+
+             Age (Complete) :- <input type="text" name="ag" value="" placeholder="enter your age"/>
+
+    I Agree To all Terms and Conditions Provided by College and Indian Railways.
+                   <h3><center>Railway Concession Detail</center></h3>
+      Class :- <select name="class">
+               <option>First Class</option>
+               <option>Second Class</option>
+               </select>
+
+      Duration :- <select name="durt">
+                  <option>Quaterly</option>
+                  <option>Monthly</option>
+                  </select>
+
+      Station From <input type="text" name="from1" value="" placeholder="enter your location"/>     To     Malad
+
+
+
+
+                 <input type="submit" name="btn" value="Submit"  onclick="validate()">       <input type="reset" name="res" value="reset">
+
+
+</pre>
+</form>
+<a href="index.html">back</a>
+</body>
+</html>
+

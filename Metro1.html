@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Metro</title>
+</head>
+ <link rel="stylesheet" type="text/css" href="home.css" />
+<script type="text/javascript">
+function validate()
+ {
+
+     if(document.f1.name.value=="")
+     {
+         alert("please enter the first name");
+         return false;
+     }
+      if(document.f1.rd1[0].checked=="" && document.f1.rd1[1].checked=="")
+     {
+         alert("please select your gender");
+         return false;
+     }
+     if(document.f1.txt.value=="")
+     {
+         alert("please enter the address");
+         return false;
+     }
+     if(document.f1.cls.value=="")
+     {
+         alert("please enter the class");
+         return false;
+     }
+     if(document.f1.dpt.value=="")
+     {
+         alert("please enter the department");
+         return false;
+     }
+     if(document.f1.rno.value=="")
+     {
+         alert("please enter the Roll No");
+         return false;
+     }
+     if(document.f1.dt.value=="")
+     {
+         alert("please enter the date");
+         return false;
+     }
+     if(document.f1.dob.value=="")
+     {
+         alert("please enter the date of birth");
+         return false;
+     }
+     if(document.f1.age.value=="")
+     {
+         alert("please enter the age");
+         return false;
+     }
+        if(document.f1.drt.value=="")
+     {
+         alert("please enter the duration ");
+         return false;
+     }
+        if(document.f1.from.value=="")
+     {
+         alert("please enter your location");
+         return false;
+     }
+     return true;
+ }
+ </script>
+<body>
+   <form name="f1" method="POST" action="met.php">
+<pre>
+                   <h1><center>Application of Metro concession Form</center></h1>
+
+
+    Date :- <input type="date" name="dt" />
+
+
+    Name :- <input type="text" name="name"  placeholder="full name" />
+
+    Gender :- <select name="rd1" placeholder="enter your gender"/>
+                  <option>Male</option>
+                  <option>Female</option>
+                  </select>
+
+     Address :-
+               <textarea name="txt" rows="4" cells="10" placeholder=" enter your address"></textarea>
+
+               Class :-<input type="text" name="cls"  placeholder="enter your class"/>  Dept :-<input type="text" name="dpt"  placeholder="enter your department "/>  Roll.No :-<input type="text" name="rno"  placeholder="enter your roll.no "/>
+
+
+
+               Date Of Birth :-  <input type="date" name="dob"/>
+
+
+             Age (Complete) :- <input type="text" name="age"  placeholder="enter your age"/>
+    I Agree To all Terms and Conditions Provided by College and Metro(Service Provided by Reliance).
+                   <h3><center>Metro Concession Detail</center></h3>
+
+
+      Duration :- <select name="drt" placeholder="enter duration"/>
+                  <option>Quaterly</option>
+                  <option>Monthly</option>
+                  </select>
+
+      Metro Station From <input type="text" name="from"  placeholder="enter location"/>    To     Versova
+
+
+
+
+    <input type="submit" name="sub" value="Submit" onclick="validate()"/>    <input type="reset" name="res" value="Reset" />
+
+    </pre>
+    </form>
+   <a href="index.html">back</a> 
+</body>
+
+</html>

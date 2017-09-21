@@ -1,0 +1,119 @@
+<html>
+<head><title>Bus Concession
+</title>
+<link rel="stylesheet" type="text/css" href="home.css" />
+<script type="text/javascript">
+ function validate()
+ {
+     if(document.f1.name1.value=="")
+     {
+         alert("please enter the first name");
+         return false;
+     }
+      if(document.f1.rd1[0].checked=="" && document.f1.rd1[1].checked=="")
+     {
+         alert("please select your gender");
+         return false;
+     }
+     if(document.f1.txt1.value=="")
+     {
+         alert("please enter the address");
+         return false;
+     }
+     if(document.f1.cls1.value=="")
+     {
+         alert("please enter the class");
+         return false;
+     }
+     if(document.f1.dpt1.value=="")
+     {
+         alert("please enter the department");
+         return false;
+     }
+     if(document.f1.rno1.value=="")
+     {
+         alert("please enter the Roll No");
+         return false;
+     }
+     if(document.f1.dt1.value=="")
+     {
+         alert("please enter the date");
+         return false;
+     }
+     if(document.f1.dob1.value=="")
+     {
+         alert("please enter the date of birth");
+         return false;
+     }
+     if(document.f1.age1.value=="")
+     {
+         alert("please enter the age");
+         return false;
+     }
+        if(document.f1.drt1.value=="")
+     {
+         alert("please enter the duration ");
+         return false;
+     }
+        if(document.f1.from1.value=="")
+     {
+         alert("please enter your location");
+         return false;
+     }
+     return true;
+ }
+</script>
+</head>
+
+
+<body>
+<form name="f1" method="post" action="buss.php">
+<pre>
+                   <h1><center>Application of Bus concession Form</center></h1>
+
+    Date :- <input type="date" name="dt1">
+
+
+    Name :- <input type="text" name="name1" value="" placeholder="full name">
+
+    Gender :- <select name="rd1" placeholder="enter your gender"/>
+                  <option>Male</option>
+                  <option>Female</option>
+                  </select>
+
+
+
+    Address :-
+               <textarea name="txt1" rows="4" cells"10" placeholder="enter your address"></textarea>
+
+
+ Class :-<input type="text" name="cls1"  placeholder="enter your class">  Dept :-<input type="text" name="dpt1"  placeholder="enter your department">   Roll.No :-<input type="text" name="rno1"  placeholder="enter your roll.no">
+
+
+             Date Of Birth :-  <input type="date" name="dob1">
+
+
+             Age (Complete) :- <input type="text" name="age1"  placeholder="enter your age">
+
+    I Agree To all Terms and Conditions Provided by College and BEST.
+                   <h3><center>Bus Concession Detail</center></h3>
+
+      Duration :- <select name="drt1">
+                  <option>Quaterly</option>
+                  <option>Monthly</option>
+                  </select>
+
+      Stop From <input type="text" name="from1"  placeholder="enter youur location">     To     Versova Link Road.
+
+
+
+
+                 <input type="submit" name="btn" value="Submit"  onclick="validate()">   <input type="reset" name="res" value="Reset" />
+
+
+</pre>
+</form>
+<a href="index.html">back</a>
+</body>
+</html>
+
